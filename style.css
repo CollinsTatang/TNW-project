@@ -1,0 +1,582 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.top-nav {
+  background-color: #000;
+  padding: 10px;
+}
+
+.top-nav,
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.top-nav-logo {
+  display: none;
+}
+
+.bottom-nav {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  border-bottom: 4px solid #aaa;
+  background-color: #fff;
+  z-index: 99 !important;
+  padding: 10px;
+}
+
+.top-nav a,
+.bottom-nav a {
+  text-decoration: none;
+  padding: 5px;
+  color: #aaa;
+}
+
+.gray a {
+  color: #aaa;
+}
+
+.hardfork-img-text {
+  color: #fff;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+.footer-top-links a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 13px;
+  padding-right: 10px;
+}
+
+.hardfork-img-text a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+.funding-header a {
+  text-decoration: none;
+  color: #f42;
+}
+
+.latest-news a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.fork-body div a {
+  text-decoration: none;
+  color: #f42;
+}
+
+.latest-news div a {
+  display: block;
+}
+
+.h-div-body span a {
+  text-decoration: none;
+}
+
+.h-div-body span,
+.h-div-body span a {
+  color: #aaa;
+  padding-right: 10px;
+}
+
+.hardfork-div ul li a {
+  text-decoration: none;
+  color: #555;
+}
+
+.bottom-nav a:hover {
+  color: #000;
+}
+
+.burgermenu {
+  display: none;
+}
+
+header {
+  width: 98%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 5px;
+  margin: 0 auto;
+}
+
+.header-div1 {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.349), rgb(0, 0, 0, 0.9)), url("assets/h1.jpg");
+  background-size: cover;
+}
+
+.header-logo {
+  width: 60%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.header-div1 p {
+  text-align: right;
+}
+
+.header-div1a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+.header-div1,
+.header-div2 {
+  height: 470px;
+  color: #fff;
+  position: relative;
+}
+
+.header-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 48%;
+}
+
+.header-div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-div2a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.header-div2-1 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0.404), rgb(0, 0, 0, 0.9)), url("assets/h2.webp");
+  background-size: cover;
+}
+
+.header-div2-2 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0.404), rgb(0, 0, 0, 0.9)), url("assets/h3.webp");
+  background-size: cover;
+}
+
+.header-text {
+  margin: 7px 0;
+}
+
+.h-div-body {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
+
+.h-span-span {
+  color: #fff;
+  font-weight: bolder;
+}
+
+.latest-section {
+  width: 90%;
+  margin: 60px auto;
+}
+
+.latest-section h2 {
+  color: #f42;
+}
+
+.latest-news {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.latest-news-container {
+  width: 25%;
+  height: 30%;
+  margin-bottom: 10px;
+}
+
+.latest-news-container div a:hover {
+  text-decoration: underline;
+  color: #f42;
+}
+
+.latest-news span {
+  color: #aaa;
+  font-size: 16px;
+}
+
+.latest-news em {
+  text-decoration: line-through;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.latest-news div img {
+  width: 90%;
+  height: 145px;
+}
+
+.funding-header {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.funding-headera-between {
+  border-right: 1px solid #f42;
+  border-left: 1px solid #f42;
+  padding: 0 3px;
+}
+
+.funding-main {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-gap: 20px;
+  margin: auto;
+}
+
+.funding-div {
+  position: relative;
+  background-color: #ffebe8;
+}
+
+.funding-img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 60px;
+  min-width: 60px;
+  max-width: 60px;
+  height: 60px;
+}
+
+.fun-div-header {
+  text-align: center;
+}
+
+.fun-div-header h2 {
+  margin: 0;
+  padding: 10px 20px;
+  background-color: #f42;
+  color: #fff;
+}
+
+.fun-div-body {
+  margin: 0;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #555;
+  background-color: #fffaf8;
+  height: 200px;
+}
+
+.fun-div-body:nth-child(3) {
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
+  padding-top: 10px;
+}
+
+.fun-div-body p em {
+  color: #aaa;
+}
+
+.fa-briefcase,
+.fa-tags {
+  color: #000;
+  margin-right: 8px;
+}
+
+.hardfork-section {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 20px;
+  margin: auto;
+}
+
+.hardfork-div {
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hardfork-div h1 {
+  color: #f42;
+  font-size: 30px;
+}
+
+.hardfork-div ul {
+  list-style: none;
+  color: #555;
+}
+
+.hardfork-div ul li {
+  font-size: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  margin-left: -19px;
+}
+
+.hardfork-div ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.fork-body {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 7%;
+  color: #f42;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ffebe8;
+}
+
+.fork-body div {
+  margin-left: 5px;
+}
+
+.fork-img {
+  width: 75%;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.hardfork-img {
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(154, 154, 206, 0.52), rgba(0, 0, 0, 0.73)), url("assets/h2.webp");
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+}
+
+.gray {
+  color: #aaa;
+}
+
+.hardfork-img-text h3 {
+  font-family: sans-serif;
+  line-height: 1.5rem;
+}
+
+.space {
+  width: 100%;
+  height: 10px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.footer-top {
+  float: right;
+  background-color: #131313;
+  color: #aaa;
+  padding: 45px 0;
+}
+
+.footer-top-links {
+  margin-top: 20px;
+}
+
+.font-awesome {
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  padding: 15px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.footer-bottom {
+  background-color: #000;
+  color: #aaa;
+  padding: 30px 0;
+}
+
+.footer-bottom span {
+  font-size: 15px;
+}
+
+.span-black {
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .top-nav {
+    display: none;
+  }
+
+  .top-nav-logo {
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 20px;
+    background-color: #000;
+  }
+
+  .top-nav-logo img {
+    width: 60px;
+  }
+
+  .bottom-nav {
+    margin: 0;
+  }
+
+  .bottom-nava {
+    display: none;
+  }
+
+  .burgermenu {
+    display: inline-block;
+  }
+
+  .burgermenu i {
+    color: #f42;
+  }
+
+  header {
+    grid-template-columns: 100%;
+    grid-gap: 0;
+  }
+
+  .header-div2 {
+    height: 280px;
+  }
+
+  .header-div1 {
+    width: 100%;
+    height: 140px;
+    margin: 10px 0;
+  }
+
+  .header-div2-1 {
+    width: 100%;
+    height: 140px;
+    margin: 10px 0;
+  }
+
+  .header-div2-2 {
+    width: 100%;
+    height: 140px;
+    margin: 10px 0;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .latest-news-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+
+  .latest-news div img {
+    height: 90px;
+  }
+
+  .funding-main {
+    grid-template-columns: 100%;
+  }
+
+  .hardfork-section {
+    grid-template-columns: 100%;
+  }
+
+  .header-div1a {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-logo {
+    display: none;
+  }
+
+  .header-div1a {
+    font-size: 35px;
+  }
+
+  .header-div2a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .font-awesome {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .header-div1a {
+    font-size: 23px;
+  }
+
+  .header-div2a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 600px) {
+  .header-div1,
+  .header-div2 {
+    height: 300px;
+  }
+
+  .latest-news-container {
+    width: 33%;
+  }
+
+  .rmfunding-div {
+    display: none;
+  }
+
+  .funding-main {
+    grid-template-columns: 32% 32% 32%;
+  }
+
+  .funding-div {
+    width: 100%;
+  }
+
+  .hardfork-section {
+    grid-template-columns: 48% 48%;
+  }
+}

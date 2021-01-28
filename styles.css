@@ -1,0 +1,739 @@
+/* Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/*font: inherit;*/
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* BASIC STYLES */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Avalon,sans-serif;
+    font-size: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    width: auto;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+    background-color: #131313;
+    font-size: 13px;
+}
+
+header .menu-left {
+    float: left;
+}
+
+header .menu-left ul li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+header .menu-right {
+    float: right;
+} 
+
+header .menu-right ul li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+header a {
+    color: #999999;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.clear {
+    clear: both;
+}
+
+/* TOP-MENU */
+
+.top-menu {
+    width: auto;
+    height: 20px;
+    font-size: 30px;
+    margin: 0 auto 0 auto;
+    padding: 5px 5px;
+    background-color: #ffffff;
+    position: sticky;
+    border-bottom: 20px 20px solid;
+    top: 0;
+    z-index: 1;
+    align-items: center;
+    align-content: center;
+}
+
+.top-menu .menu-left {
+    float: left;
+    padding-top: 5px;
+    background-color: #ffffff;
+}
+
+.top-menu .menu-left ul li {
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 14px;
+    letter-spacing: -0.8px;
+}
+
+.top-menu a {
+    color: #999999;
+    text-decoration: none;
+}
+
+.top-menu .menu-right {
+    float: right;
+    padding: 5px;
+    background-color: #ffffff;
+}
+.icon {
+    display: block;
+    background: transparent url(../img/icons-sprite.svg?1520429355783) no-repeat;
+    background-size: 1296px 1296px;
+    background-position: 1296px 1296px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon--search--dark {
+    background-position: -848px -848px;
+}
+
+.top-menu .menu-right .tnw {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+/* TOP */
+.top {
+    display: flex;
+    padding-top: 12px;
+    position: relative;
+    width: auto;
+    margin: 0 auto 5px auto;
+    background-color: #ffffff;
+}
+
+.top.column1 {
+    float: left;
+    padding-left: 8px;
+    width: 66%;
+}
+
+.top .column2 {
+    float: right;
+    padding-left: 8px;
+    width: 33%;
+}
+
+.top .column2 a {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.top .column1 a img {
+    width: 100%;
+}
+
+.top .column2 a img {
+    width: 100%;
+}
+
+/* NEWS */
+
+.news {
+    width: auto;
+    margin: 20px 0 5px 0;
+    background-color: #ffffff;
+    padding: 0;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bolder;
+    font-family: Avalon,sans-serif;
+    color: #ff4422;
+    margin: 30px 0 24px 0;
+}
+
+.news a {
+    text-decoration: none;
+}
+
+.news h3 {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Avalon,sans-serif;
+    color: black;
+    padding: 8px 0;
+}
+
+.news span {
+    font-size: 12px;
+    color: #a3a3a3;
+}
+
+.news .wrapper {
+    display: block;
+    max-width: 1150px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.news div {
+    display: inline-block;
+    width: calc(99% /4);
+    padding: 10px;
+    vertical-align: top;
+    margin-bottom: 18px;
+}
+
+.news img{
+    width: 100%;
+}
+
+/* FUNDING */
+
+.funding{
+    width: auto;
+    margin: 30px 0;
+    background-color: #ffffff;
+    padding: 0;
+}
+
+.funding .wrapper{
+    display: block;
+    max-width: 1150px;
+    width: auto;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.funding .title{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.funding .title h2{
+    display: inline;
+}
+
+.funding .title .menu{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+.funding .title .menu a{
+    padding: 0 10px;
+    font-size: 16px;
+    color: #ff4422;
+    text-decoration: none;
+}
+
+.funding .title .menu a:nth-child(2){
+    border-left: 1px solid #ff4422;
+    border-right: 1px solid #ff4422;
+}
+
+.funding .funds{
+    position: relative;
+    display: inline-block;
+    width: calc(99% /4);
+    vertical-align: top;
+    background-color: #fff4f2;
+    border: 10px solid white;
+}
+
+.funding img{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 10;
+}
+
+.funding .company{
+    width: 100%;
+    background-color: #ff4422;
+    height: 42px;
+}
+
+.funding .company a{
+    font-size: 15px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px 0 14px 84px;
+}
+
+.funding .fees{
+    width: 100%;
+    background-color: #ffb9ad;
+    height: 52px;
+}
+
+.funding .fees a{
+    font-size: 16px;
+    color:#000000;
+    display: block;
+    text-decoration: none;
+    padding: 12px 0 0 84px;
+    font-weight: bold;
+}
+
+.funding .fees a:nth-child(2){
+    font-size: 12px;
+    color:#424242;
+    padding: 0 0 0 84px;
+    font-weight: normal;
+}
+
+.funding .info{
+    display: block;
+    font-size: 12px;
+    color:#424242;
+    padding: 18px 10px 0px 10px;
+    text-decoration: none;
+    line-height: 15px;
+}
+
+.funding .last{
+    padding-bottom: 20px;
+}
+
+.funding .line{
+    width: 100%;
+    padding-top: 16px;
+    border-bottom: 1px solid #ff4422;
+}
+
+/* HARD SECTION */
+.hard{
+    width: auto;
+    margin: 10px 0;
+    background-color: #ffffff;
+    padding: 0;
+}
+
+.hard .wrapper{
+    display: block;
+    max-width: 1150px;
+    width: auto;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.hard .parts{
+    display: inline-block;
+    width: calc(99% /3);
+    padding: 10px;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.hard .medium-img{
+    width: 100%;
+}
+
+.hard h2{
+    margin: 10px 0 14px 0;
+}
+
+.hard .subarticle{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background-color: #fce3df;
+}
+
+.hard .subarticle img{
+    float: right;
+    padding-left: 10px;
+}
+
+.hard .subarticle span{
+    display: block;
+    font-size: 12px;
+    color: #FF4422;
+    text-transform: uppercase;
+    padding: 12px;
+    padding-bottom: 0;
+}
+
+.hard .subarticle a{
+    display: block;
+    font-size: 14px;
+    color: #FF4422;
+    font-weight: bold;
+    padding: 12px;
+    padding-top: 6px;
+    text-decoration: none;
+}
+
+.hard ul{
+    margin-left: 15px;
+}
+
+.hard ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #FF4422; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -10px; /* Also needed for space (tweak if needed) */
+  }
+
+.hard ul li{
+    border-bottom: 1px solid #d6d6d6; 
+    padding: 14px 0;
+  }
+
+.hard ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 12px;
+    color: #646464;
+}
+
+/* HARD SECTION */
+.deals{
+    width: auto;
+    margin: 10px 0;
+    background-color: #ffffff;
+    padding: 0;
+}
+
+.deals .wrapper{
+    display: block;
+    max-width: 1150px;
+    width: auto;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.deals .title{
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 25px;
+}
+
+.deals .title h2{
+    display: inline;
+}
+
+.deals .title .latest{
+    text-decoration: none;
+}
+
+.deals .title .all{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    font-size: 16px;
+    color: #ff4422;
+    text-decoration: none;
+}
+
+.deals .deal{
+    display: inline-block;
+    width: calc(99% /4);
+    padding: 10px;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
+.deal img{
+    width: 100%;
+}
+
+.deal .product{
+    display: block;
+    font-size: 16px;
+    color: #131313;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.deal p{
+    font-size: 19px;
+    color: #3a3a3a;
+}
+
+.deal p span{
+    font-size: 12px;
+    color: #9b9b9b;
+    text-decoration: line-through;
+}
+
+/* SOCIAL SECTION */
+.social{
+    width: auto;
+    margin: 50px auto 0 auto;
+    background-color: #131313;
+    padding: 0;
+    text-align: center;
+}
+
+.social .icons{
+    padding: 45px 0 20px 0;
+}
+
+.social .bar{
+    padding: 20px 0 40px 0;
+}
+
+.social .icons li{
+    display: inline-block;
+}
+
+.social .bar li{
+    display: inline-block;
+}
+
+.social .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #333333;
+    color: white;
+    margin: 0 6px;
+  }
+
+.social .bar li a{
+    text-decoration: none;
+    color: #AAAAAA;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 0 5px;
+    letter-spacing: -0.8px;
+}
+
+/* FOOTER SECTION */
+footer{
+    width: auto;
+    margin: 0 auto 0 auto;
+    background-color: #000000;
+    padding: 0;
+    text-align: center;
+}
+
+footer p{
+    font-size: 13px;
+    color: #AAAAAA;
+    padding: 38px 0;
+}
+
+/* RESPONSIVE SECTION */
+.top-menu .res-nav{
+    display: none;
+}
+
+@media (max-width: 865px){
+    header{
+        display: none;
+    }
+    .top-menu .menu-left{
+        display:none;
+    }
+    .top-menu .menu-right{
+        display:none;
+    }
+    .top-menu .res-nav{
+        display: block;
+        border-bottom: 1px solid #e7e7e7;
+    }
+    .top-menu .res-nav .more{
+        float:right;
+    }
+    .top-menu{
+        padding: 0;
+        margin: 0;
+    }
+    .top-message{
+        display: none;
+    }
+}
+
+@media (max-width: 740px){
+    .top .column1{
+        float: none;
+        padding: 0 8px;
+        width: 100%;
+    }
+    
+    .top .column2{
+        float: none;
+        padding: 0 8px;
+        width: 100%;
+    }
+    .top .column2 a{
+        padding-top: 8px;
+    }
+}
+
+@media (max-width: 1020px){
+    .news div{     
+        width: calc(99% /3);
+    }
+    .news h3{
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+        padding: 8px 0;
+    }
+}
+
+@media (max-width: 750px){
+    .news div{     
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .news img{
+        float: left;
+        width: 110px;
+        height: 72px;
+        padding-right: 10px;
+    }
+    .news h3{
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+        padding: 1px 0 4px 0;
+    }
+}
+
+@media (max-width: 1020px){
+    .funding .funds{
+        width: calc(99% /3);
+    }
+    .funding .funds:last-child{
+        display: none;
+    }    
+    .funding .title .menu{
+        position: relative;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 750px){
+    .funding .funds{
+        width: 100%;
+    }
+    .funding .title .menu a{
+        padding: 5px 10px;
+        font-size: 14px;
+        display: block;
+    }
+    
+    .funding .title .menu a:nth-child(2){
+        border-left: 0;
+        border-right: 0;
+    }
+}
+
+@media (max-width: 1020px){
+    .hard .parts{
+        width: calc(99% /2);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 750px){
+    .hard .parts{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1020px){
+    .deals .deal{
+        width: calc(99% /3);
+    }
+    .deal .product{
+        font-size: 15px;
+    }
+    .deal p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 750px){
+    .deals .deal{
+        width: 100%;
+    }
+    .deal img{
+        float: left;
+        width: 110px;
+        height: 72px;
+        padding-right: 10px;
+    }
+}

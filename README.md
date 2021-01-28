@@ -2,7 +2,7 @@
 
 # TNW Clone Project
 
-![screenshot](./web_screenshot.png)
+![TNW](https://user-images.githubusercontent.com/37639594/105220349-42c31000-5b60-11eb-9061-95509ac37a01.png)
 
 Clone of the The Next Web website page putting emphasis on how it behaves differently depending on the size of the screen.
 
@@ -49,7 +49,7 @@ HEAD TO
 
 - GitHub:[@ifnotlily](https://github.com/ifnotlily)
 - Twitter: [@ifnotlily](https://twitter.com/ifnotlily)
-- Linkedin:[@lilian-francis](https://www.linkedin.com/in/lilian-francis)
+- Linkedin:[lilian-francis](https://www.linkedin.com/in/lilian-francis)
 
 ## Getting Started
 
